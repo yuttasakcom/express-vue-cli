@@ -1,7 +1,7 @@
 <template>
   <div>
-      <h1>Home Page</h1>
-      <p>connect : {{ apiVersion }}</p>
+    <h1>Home Page</h1>
+    <p>connect : {{ apiVersion }}</p>
   </div>
 </template>
 
