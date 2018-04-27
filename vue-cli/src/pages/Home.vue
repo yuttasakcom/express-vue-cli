@@ -11,7 +11,7 @@ import axios from "axios";
 export default {
   created() {
     axios
-      .get("http://localhost:3000/api")
+      .get("/api")
       .then(res => res.data)
       .then(data => (this.apiVersion = data.message))
       .catch(err => console.log(err));
