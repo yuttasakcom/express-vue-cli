@@ -1,0 +1,30 @@
+{
+  "name": "express-vue-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuttasakcom/express-vue-cli.git"
+  },
+  "keywords": [],
+  "author": "YoYea <yuttasakcom@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuttasakcom/express-vue-cli/issues"
+  },
+  "homepage": "https://github.com/yuttasakcom/express-vue-cli#readme",
+  "scripts": {
+    "dev:client": "npm run dev --prefix vue-cli",
+    "dev:server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
